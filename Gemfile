@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+require 'tzinfo/data'
+
 group :jekyll_plugins do
   gem 'jekyll'
   gem 'jekyll-feed'
@@ -7,6 +9,7 @@ group :jekyll_plugins do
   gem 'jekyll-redirect-from'
   gem 'jemoji'
   gem 'webrick', '~> 1.8'
+  gem 'tzinfo-data'
 end
 
 gem 'github-pages'
