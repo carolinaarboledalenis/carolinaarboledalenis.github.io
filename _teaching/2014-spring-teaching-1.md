@@ -1,20 +1,32 @@
 ---
-title: "Teaching experience 1"
+title: "TD Econométrie appliquée sur R"
 collection: teaching
-type: "Undergraduate course"
+type: "Master course"
 permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+venue: "Paris 1 Pantheon-Sorbonne, Economics Department"
+date: 2024-09-01
+location: "Paris, France"
+language: "English"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+### Course Description
+Some text...
 
-Heading 1
-======
+<details>
+  <summary><strong>Syllabus</strong></summary>
 
-Heading 2
-======
+Week 1: Intro  
+Week 2: Regression  
+Week 3: Panel Data  
+…
 
-Heading 3
-======
+</details>
+
+<details>
+  <summary><strong>Materials</strong></summary>
+
+- Slides  
+- R scripts  
+- Assignments  
+
+</details>

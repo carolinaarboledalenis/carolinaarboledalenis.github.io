@@ -1,10 +1,9 @@
 ---
 title: "Journées Doctorales du Développement"
-collection: talks
-type: "Conference"
-permalink: /talks/2012-03-01-talk-1
+collection: miscellaneous
+type: "Playlist"
+permalink: /miscellaneous/playlists
 venue: "Association Française d’Économie du Développement (AFEDEV)"
 date: 2025-01-27
 location: "Strasbourg, France"
 ---
-

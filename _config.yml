@@ -17,6 +17,7 @@ url                      : https://carolinaarboledalenis.github.io # the base ho
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "carolinaarboledalenis/carolinaarboledalenis.github.io"
 
+
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
@@ -27,9 +28,9 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "PhD Student in Economics"
   location         : "Paris, France"
-  employer         : "Université Paris 1 Panthéon-Sorbonne"
+  employer         : "Paris 1 Panthéon-Sorbonne"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "carolina.arboleda@univ-paris1.fr" 
 
   # Academic websites
   academia         : # URL
@@ -228,6 +229,9 @@ collections:
     output: true
     permalink: /:collection/:path/
   talks:
+    output: true
+    permalink: /:collection/:path/
+  miscellaneous:
     output: true
     permalink: /:collection/:path/
 

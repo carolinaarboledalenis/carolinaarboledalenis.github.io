@@ -5,8 +5,31 @@ permalink: /teaching/
 author_profile: true
 ---
 
-{% include base_path %}
-
 {% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+<div class="teaching-card">
+  <h2 class="teaching-title">{{ post.title }}</h2>
+
+  <ul class="teaching-meta">
+  {% if post.type %}
+    <li><strong>Type:</strong> {{ post.type }}</li>
+  {% endif %}
+  {% if post.venue %}
+    <li><strong>Venue:</strong> {{ post.venue }}</li>
+  {% endif %}
+  {% if post.location %}
+    <li><strong>Location:</strong> {{ post.location }}</li>
+  {% endif %}
+  {% if post.language %}
+    <li><strong>Language:</strong> {{ post.language }}</li>
+  {% endif %}
+  {% if post.date %}
+    <li><strong>Year:</strong> {{ post.date | date: "%Y" }}</li>
+  {% endif %}
+</ul>
+
+
+  <div class="teaching-description">
+    {{ post.content | markdownify }}
+  </div>
+</div>
 {% endfor %}

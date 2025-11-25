@@ -1,5 +1,5 @@
 ---
-title: "When the party is over. The effect of political fragmentation on clientelism"
+title: "When the Party is Over: The Effect of Political Fragmentation on Clientelism"
 collection: publications
 category: in_progress
 #permalink: /publication/2009-10-01-paper-title-number-1

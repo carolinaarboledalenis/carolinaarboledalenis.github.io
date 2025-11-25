@@ -1,20 +1,31 @@
 ---
-title: "Teaching experience 2"
+title: "Institutions et Protection Sociale"
 collection: teaching
 type: "Workshop"
 permalink: /teaching/2015-spring-teaching-1
 venue: "University 1, Department"
-date: 2015-01-01
+date: 2023-01-01
 location: "City, Country"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+### Course Description
+Some text...
 
-Heading 1
-======
+<details>
+  <summary><strong>Syllabus</strong></summary>
 
-Heading 2
-======
+Week 1: Intro  
+Week 2: Regression  
+Week 3: Panel Data  
+…
 
-Heading 3
-======
+</details>
+
+<details>
+  <summary><strong>Materials</strong></summary>
+
+- Slides  
+- R scripts  
+- Assignments  
+
+</details>
