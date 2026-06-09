@@ -19,8 +19,8 @@ Work Experience
 
 * **Research Assistant** - Centre d'Économie de la Sorbonne  
   Paris, France. May 2024 – Jul 2024 
-  - Conducted geospatial analysis linking informality and clientelism. Paper:   
-  - Web-scraping of political leaders’ data.  
+  - Conducted geospatial analysis linking informality and clientelism. [Paper](https://thedocs.worldbank.org/en/doc/ba22d404ef87ba9e207f09b4866b8a8b-0350012025/original/Julieta-Peveri-Pardelli-state-capacity-informality-clientelism-2025-01.pdf)  
+  - Web-scraping of political leaders’ data.   
 
 * **Strategic Assistant of Transparency and Participation** - Fundación Colombia 2050  
   Remote. Jan 2022 – Jul 2022  
