@@ -1,0 +1,70 @@
+---
+layout: archive
+title: "Research"
+permalink: /publications/
+author_profile: true
+---
+
+{% if site.author.googlescholar %}
+  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+{% endif %}
+
+{% include base_path %}
+
+{% assign publications = site.publications | sort: "date" | reverse %}
+
+{% if site.publication_category %}
+  {% for category in site.publication_category %}
+    {% assign title_shown = false %}
+    {% for post in publications %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% unless title_shown %}
+        <h2 class="archive-section-title">{{ category[1].title }}</h2>
+        {% assign title_shown = true %}
+      {% endunless %}
+
+      <article class="academic-entry publication-entry">
+        {% if post.date or post.venue %}
+          <p class="academic-entry__period">
+            {% if post.venue %}{{ post.venue }}{% endif %}
+            {% if post.venue and post.date %} · {% endif %}
+            {% if post.date %}{{ post.date | date: "%Y" }}{% endif %}
+          </p>
+        {% endif %}
+
+        <h3 class="academic-entry__title">
+          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+        </h3>
+
+        {% if post.citation %}
+          <p class="publication-citation">{{ post.citation }}</p>
+        {% endif %}
+
+        {% if post.paperurl or post.slidesurl or post.bibtexurl %}
+          <p class="academic-entry__links">
+            {% if post.paperurl %}<a href="{{ post.paperurl }}">Paper</a>{% endif %}
+            {% if post.paperurl and post.slidesurl %}<span aria-hidden="true">/</span>{% endif %}
+            {% if post.slidesurl %}<a href="{{ post.slidesurl }}">Slides</a>{% endif %}
+            {% if post.bibtexurl and post.paperurl %}<span aria-hidden="true">/</span>{% endif %}
+            {% if post.bibtexurl and post.slidesurl and post.paperurl == nil %}<span aria-hidden="true">/</span>{% endif %}
+            {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}">BibTeX</a>{% endif %}
+          </p>
+        {% endif %}
+
+        {% assign publication_body = post.content | strip %}
+        {% if publication_body != "" %}
+          <div class="academic-entry__description">
+            {{ post.content | markdownify }}
+          </div>
+        {% endif %}
+      </article>
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  {% for post in publications %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}
+

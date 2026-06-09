@@ -1,0 +1,102 @@
+---
+layout: archive
+title: "Conferences and Talks"
+permalink: /talks/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% if site.talkmap_link == true %}
+
+<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+
+{% endif %}
+
+{% assign talks = site.talks | sort: "date" %}
+{% assign talks_reversed = site.talks | sort: "date" | reverse %}
+
+{% for post in talks %}
+  {% if post.status == "upcoming" %}
+    {% assign has_upcoming = true %}
+  {% endif %}
+{% endfor %}
+
+{% if has_upcoming %}
+  <h2 class="archive-section-title">Upcoming Conferences</h2>
+  {% for post in talks %}
+    {% if post.status == "upcoming" %}
+      <article class="academic-entry talk-entry upcoming-entry">
+        {% if post.period %}
+          <p class="academic-entry__period">{{ post.period }}</p>
+        {% elsif post.date %}
+          <p class="academic-entry__period">
+            {{ post.date | date: "%B %d, %Y" }}{% if post.end_date %}-{{ post.end_date | date: "%B %d, %Y" }}{% endif %}
+          </p>
+        {% endif %}
+
+        <h3 class="academic-entry__title">
+          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+        </h3>
+
+        <ul class="academic-entry__meta">
+          {% if post.type %}
+            <li><strong>Type:</strong> {{ post.type }}</li>
+          {% endif %}
+          {% if post.venue %}
+            <li><strong>Venue:</strong> {{ post.venue }}</li>
+          {% endif %}
+          {% if post.location %}
+            <li><strong>Location:</strong> {{ post.location }}</li>
+          {% endif %}
+        </ul>
+
+        {% if post.link %}
+          <p class="academic-entry__links"><a href="{{ post.link }}">Event Website</a></p>
+        {% endif %}
+
+        {% assign talk_body = post.content | strip %}
+        {% if talk_body != "" %}
+          <div class="academic-entry__description">
+            {{ post.content | markdownify }}
+          </div>
+        {% endif %}
+      </article>
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+<h2 class="archive-section-title">Past Conferences and Talks</h2>
+
+{% for post in talks_reversed %}
+  {% unless post.status == "upcoming" %}
+  <article class="academic-entry talk-entry">
+    {% if post.date %}
+      <p class="academic-entry__period">{{ post.date | date: "%B %d, %Y" }}</p>
+    {% endif %}
+
+    <h2 class="academic-entry__title">
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+    </h2>
+
+    <ul class="academic-entry__meta">
+      {% if post.type %}
+        <li><strong>Type:</strong> {{ post.type }}</li>
+      {% endif %}
+      {% if post.venue %}
+        <li><strong>Venue:</strong> {{ post.venue }}</li>
+      {% endif %}
+      {% if post.location %}
+        <li><strong>Location:</strong> {{ post.location }}</li>
+      {% endif %}
+    </ul>
+
+    {% assign talk_body = post.content | strip %}
+    {% if talk_body != "" %}
+      <div class="academic-entry__description">
+        {{ post.content | markdownify }}
+      </div>
+    {% endif %}
+  </article>
+  {% endunless %}
+{% endfor %}

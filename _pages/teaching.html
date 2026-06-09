@@ -1,0 +1,64 @@
+---
+layout: archive
+title: "Teaching"
+permalink: /teaching/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% assign teaching_posts = site.teaching | sort: "date" | reverse %}
+
+{% for post in teaching_posts %}
+  {% unless post.category == "responsibilities" %}
+    <article class="academic-entry teaching-entry">
+      {% if post.period %}
+        <p class="academic-entry__period">{{ post.period }}</p>
+      {% elsif post.date %}
+        <p class="academic-entry__period">{{ post.date | date: "%Y" }}</p>
+      {% endif %}
+
+      <h2 class="academic-entry__title">
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+      </h2>
+
+      <ul class="academic-entry__meta">
+        {% if post.type %}
+          <li><strong>Type:</strong> {{ post.type }}</li>
+        {% endif %}
+        {% if post.venue %}
+          <li><strong>Venue:</strong> {{ post.venue }}</li>
+        {% endif %}
+        {% if post.location %}
+          <li><strong>Location:</strong> {{ post.location }}</li>
+        {% endif %}
+        {% if post.language %}
+          <li><strong>Language:</strong> {{ post.language }}</li>
+        {% endif %}
+      </ul>
+
+      <div class="academic-entry__description">
+        {{ post.content | markdownify }}
+      </div>
+    </article>
+  {% endunless %}
+{% endfor %}
+
+{% assign has_responsibilities = false %}
+{% for post in teaching_posts %}
+  {% if post.category == "responsibilities" %}
+    {% assign has_responsibilities = true %}
+  {% endif %}
+{% endfor %}
+
+{% if has_responsibilities %}
+  <hr />
+  <h2>Other Academic Responsibilities</h2>
+  {% for post in teaching_posts %}
+    {% if post.category == "responsibilities" %}
+      <div class="responsibilities-list">
+        {{ post.content | markdownify }}
+      </div>
+    {% endif %}
+  {% endfor %}
+{% endif %}

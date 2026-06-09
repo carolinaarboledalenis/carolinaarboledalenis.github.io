@@ -1,0 +1,18 @@
+---
+layout: archive
+title: "Miscellaneous"
+permalink: /miscellaneous/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% assign miscellaneous_posts = site.miscellaneous | sort: "date" | reverse %}
+
+<div class="miscellaneous-page">
+  {% for post in miscellaneous_posts %}
+    <section class="miscellaneous-section">
+      {{ post.content | markdownify }}
+    </section>
+  {% endfor %}
+</div>
