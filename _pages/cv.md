@@ -19,7 +19,7 @@ Work Experience
 
 * **Research Assistant** - Centre d'Économie de la Sorbonne  
   Paris, France. May 2024 – Jul 2024 
-  - Conducted geospatial analysis linking informality and clientelism.  
+  - Conducted geospatial analysis linking informality and clientelism. Paper:   
   - Web-scraping of political leaders’ data.  
 
 * **Strategic Assistant of Transparency and Participation** - Fundación Colombia 2050  
