@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About me"
+title: "Carolina Arboleda Lenis"
 author_profile: true
 redirect_from: 
   - /about/
