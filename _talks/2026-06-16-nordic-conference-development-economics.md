@@ -2,7 +2,6 @@
 title: "Nordic Conference in Development Economics 2026"
 collection: talks
 type: "Conference"
-status: upcoming
 permalink: /talks/2026-06-16-nordic-conference-development-economics
 venue: "Linnaeus University"
 date: 2026-06-16
