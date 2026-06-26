@@ -14,7 +14,7 @@ date: 2026-06-09
   <li class="misc-row">
     <span class="misc-marker">focus</span>
     <span class="misc-content">
-      <a class="playlist-title" href="https://www.youtube.com/watch?v=AawLM81gIHo&list=PL98Q8erLPAJELA8SKOQgUzuJwHm_cOr0B&index=17" target="_blank" rel="noopener">Playlist to study as a medieval philosopher who just had the truth revealed by divine grace</a>
+      <a class="playlist-title" href="https://www.youtube.com/watch?v=AawLM81gIHo&t=23s" target="_blank" rel="noopener">Playlist to study as a medieval philosopher who just had the truth revealed by divine grace</a>
       <span class="playlist-note"> For the moment when you need to enter the ultimate flow state.</span>
     </span>
   </li>
