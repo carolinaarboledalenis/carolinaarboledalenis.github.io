@@ -21,7 +21,7 @@ date: 2026-06-09
   <li class="misc-row">
     <span class="misc-marker">deadline</span>
     <span class="misc-content">
-      <a class="playlist-title" href="https://www.youtube.com/watch?v=TIqsKXQHvFI&list=PL98Q8erLPAJELA8SKOQgUzuJwHm_cOr0B&index=26" target="_blank" rel="noopener">When the Stakes Are High | Focus Music</a>
+      <a class="playlist-title" href="https://www.youtube.com/watch?v=TIqsKXQHvFI&t=1s" target="_blank" rel="noopener">When the Stakes Are High | Focus Music</a>
       <span class="playlist-note">For when the deadline NEEDS to become motivation.</span>
     </span>
   </li>
