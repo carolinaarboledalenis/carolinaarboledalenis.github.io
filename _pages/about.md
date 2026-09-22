@@ -9,7 +9,7 @@ redirect_from:
 
 <section class="profile-intro">
   <p class="profile-kicker">Political economy · Development economics · Latin America</p>
-  <p class="profile-lede">I am a second-year PhD candidate at the Sorbonne School of Economics, University of Paris 1 Panthéon-Sorbonne, supervised by Prof. Lisa Chauvet and Prof. Julieta Peveri.</p>
+  <p class="profile-lede">I am a third-year PhD candidate at the Sorbonne School of Economics, University of Paris 1 Panthéon-Sorbonne, supervised by Prof. Lisa Chauvet and Prof. Julieta Peveri.</p> 
 </section>
 
 My research is in political economy and development economics. I study how politics can operate as an informal insurance mechanism in contexts where state-provided safety nets are limited. My current work focuses on clientelism, party systems, and political behavior from the perspective of clients.

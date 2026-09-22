@@ -4,7 +4,7 @@ collection: publications
 category: other_pub
 permalink: /publication/2015-10-01-paper-title-number-4
 #excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
-date: 2021-12-01
+date: 2022-12-01
 venue: 'Misión de Observación Electoral -MOE'
 #slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
 paperurl: 'https://moe.org.co/wp-content/uploads/2022/03/MRE-2022-Cali_DIGITAL.pdf'

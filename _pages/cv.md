@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+[Download my CV (PDF)]({{ base_path }}/files/Carolina_Arboleda_Lenis_CV.pdf)
+
 
 Work Experience
 ======
