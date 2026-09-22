@@ -28,8 +28,8 @@ I also work on informal settlements, their political behavior, and the strategie
       <p>Informal settlements, slum upgrading, political linkages.</p>
     </div>
     <div class="focus-item">
-      <h3>Organized Crime</h3>
-      <p>Support for narcopoliticians as informal insurance for coca farmers.</p>
+      <h3>Illegal Economies</h3>
+      <p>Criminalized activities, political support, urban expansion.</p>
     </div>
   </div>
 </section>
