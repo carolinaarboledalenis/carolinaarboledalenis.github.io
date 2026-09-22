@@ -11,4 +11,3 @@ location: "Växjö, Sweden"
 link: "https://lnu.se/en/meet-linnaeus-university/current/events/2026/conferences/ncde-2026/"
 ---
 
-Upcoming presentation at the 24th Nordic Conference in Development Economics.
